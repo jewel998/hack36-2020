@@ -9,9 +9,10 @@ Branch: Computer Science and Engineering
 Institution: MNNIT
 */
 html{
-    --outer-circle-color-1: #29a19c;
+    --outer-circle-color-1: #5aa1bc;
     --outer-circle-color-2: orange;
     --outer-circle-color-3: #a3f7bf;
+    --stroke-circle-color: #29a19c;
     --brand-color-1:#FF585D;
     --brand-color-2:#74D1EA;
     --background: #393e46;

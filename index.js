@@ -218,9 +218,32 @@ function menuOnResize(){
         }
         else{ resetPopup(); }
   });
+function daysToHack() {
+    var launchDate = new Date('Feb 14 2020');
+    var localDate = new Date();
+    var utc = localDate.getTime() + (localDate.getTimezoneOffset() * 60000);
+    var edtNow = new Date(utc + (3600000*(-4)));
+
+    var millisecondsPerDay = 24 * 60 * 60 * 1000;
+    var numberDays = Math.round((launchDate - edtNow) / millisecondsPerDay);
+
+    return numberDays;
+}
+function updateDial(){
+    var days = daysToHack();
+    var MAX_DAYS=60;
+    var timer = document.getElementById("timer");
+    var r = timer.getAttribute('r');
+    var c = Math.PI*(r*2);
+    if(days<0){days=0;}
+    if(days>MAX_DAYS){days=MAX_DAYS;}
+    var dashOffset = ((MAX_DAYS-days)/MAX_DAYS)*c;
+    timer.style.strokeDashoffset = dashOffset;
+}
 $(document).ready(function(){
     $("header").addClass("ready");
     $("footer").addClass("ready");
+    updateDial();
 });
 //console.clear();
 console.log("You're here in the developers section");

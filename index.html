@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hack36</title>
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="Hack36 2020"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://hack36.com"/>
+    <meta property="og:description" content="Hack, build, and innovate at MNNIT's hackathon. Feb 14 - 16."/>
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@hack36mnnit">
+    <meta name="twitter:title" content="Hack36 2020">
+    <meta name="twitter:description" content="Hack, build, and innovate at MNNIT's hackathon. Feb 14 - 16.">
+
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="fonts/DeLarge.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cairo|Poppins&amp;display=swap">
@@ -66,7 +79,7 @@ Institution: MNNIT
             }
         
             .cls-1, .cls-4 {
-                stroke: var(--outer-circle-color-1);
+                stroke: var(--stroke-circle-color);
             }
         
             .cls-1 {
@@ -90,11 +103,12 @@ Institution: MNNIT
             }
         
             #timer {
-                stroke: #d0d6e0;
+                stroke: var(--stroke-circle-color);
                 stroke-width: 53px; 
                 stroke-dashoffset: 0;
-                stroke-dasharray: 1529.96; 
-                transition: stroke-dashoffset 2s ease;
+                stroke-dasharray: 1529.96;
+                transition: stroke-dashoffset 2s ease; 
+                transition-delay: 2.5s;
             }
             </style>
         </defs>
