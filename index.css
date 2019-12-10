@@ -271,8 +271,8 @@ header.ready .right > div:nth-child(1){transform:skew(var(--inverse-skew)) trans
 footer.ready .left > div:nth-child(1){transform:skew(var(--inverse-skew)) translateX(6%);border-right:1px solid var(--border);border-top:1px solid var(--border);z-index:104;}
 footer.ready .right > div:nth-child(1){transform:skew(var(--skew)) translateX(-6.8%);border-left:1px solid var(--border);border-top:1px solid var(--border);}
 footer.ready .center{width:100%;border-bottom:1px solid var(--border);transform: translateY(-3%)}
-footer .right > div:nth-child(2),header .left > div:nth-child(2),header .right > div:nth-child(2){position:relative;width:100%;height:100%;opacity:0;transition:ease-out 0.5s all;transition-delay:2s;}
-footer.ready .right > div:nth-child(2),header.ready .left > div:nth-child(2),header.ready .right > div:nth-child(2){opacity:1}
+footer.ready .right > div:nth-child(2),header.ready .left > div:nth-child(2),header.ready .right > div:nth-child(2){opacity:1;transition:ease-out 0.5s all;transition-delay:2s;}
+footer .right > div:nth-child(2),header .left > div:nth-child(2),header .right > div:nth-child(2){position:relative;width:100%;height:100%;opacity:0 !important;}
 footer.ready .right > div:nth-child(2) > a,header.ready .right > div:nth-child(2) > p{padding:1px 5px;position:relative;top:30%;margin:0 4px;color:white;}
 footer.ready .right > div:nth-child(2) > a:hover{color:#999;}
 header .left > div:nth-child(2){position:absolute;right:-10%;width:30% !important;margin:0;z-index:104;}
