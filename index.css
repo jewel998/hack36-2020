@@ -19,16 +19,17 @@ html{
     --text-color:white;
     --button-border-1: #fb7262;
     --button-border-2: #ff264e;
-    --button-border-3: #4db2d1;
+    --button-border-3: #f65c78;
     --spin-3: 25s;
     --spin-2: 10s;
     --spin-1: 15s;
-    --scrollbar-color: #4db2d1;
-    --scrollbar-background: #23849c;
+    --scrollbar-color: #ff264e;
+    --scrollbar-background: #f65c78;
     --shield-background:#252C37;
     --border:cyan;
     --skew:-45deg;
     --inverse-skew:45deg;
+    --profile-link-color-1: white;
   }
   html,body{margin:0;padding:0;width:10vw;height:100vh;background:var(--background);overflow-X:hidden;}
   a{text-decoration:none;}
@@ -300,3 +301,6 @@ header.ready .right > div:nth-child(2) > p,header.ready .right > div:nth-child(2
   95%{opacity:0;}
   100%{opacity:1;}
 }
+.judge > div.profile-link{width:94%;text-align:left;padding:0 3%;margin:5px 0 35px;}
+.judge > div.profile-link > a{color:var(--profile-link-color-1);border:1px solid var(--profile-link-color-1);padding:6px 10px;border-radius:0 10px 0 10px;transition:ease-out 0.5s all;}
+.judge > div.profile-link > a:hover{background:var(--profile-link-color-1);color:var(--background);}
