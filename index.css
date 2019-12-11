@@ -105,6 +105,10 @@ html{
       .prize-platform ~ h3{margin-top:35px;}
       header .left > div:nth-child(2){right:-9% !important;}
       header.ready .right > div:nth-child(2) > p{display:none !important;}
+      footer .center > div > a:nth-child(1):after{content:"" !important;}
+      footer .center > div > a:nth-child(2):after{content:"" !important;}
+      footer .center > div > a:nth-child(3):after{content:"" !important;}
+      footer .center > div > a:nth-child(4):after{content:"" !important;}
   }
   @media only screen and (min-width:370px) and (max-width:768px){
     header .left > div:nth-child(2){right:-14% !important;}
@@ -225,6 +229,11 @@ html{
     header .center{transform:translateY(2%) !important;}
     footer.ready .right > div:nth-child(2) > a{font-size:9px !important;padding:0 2px;margin:0!important;}
     header.ready .right > div:nth-child(2) > p{display:none !important;}
+    footer .center > div > a:nth-child(1):after{content:"" !important;}
+    footer .center > div > a:nth-child(2):after{content:"" !important;}
+    footer .center > div > a:nth-child(3):after{content:"" !important;}
+    footer .center > div > a:nth-child(4):after{content:"" !important;}
+    footer .center > div > a{margin:0 8px !important;font-size:80% !important;}
 }
 #judge-box,#prizes-box,#sponsors-box{text-align:left;overflow-Y:auto;padding-top:25px !important;}
 .judge-info{position:relative;display:flex;}
@@ -277,9 +286,9 @@ header.ready .right > div:nth-child(1){transform:skew(var(--inverse-skew)) trans
 footer.ready .left > div:nth-child(1){transform:skew(var(--inverse-skew)) translateX(6%);border-right:1px solid var(--border);border-top:1px solid var(--border);z-index:104;}
 footer.ready .right > div:nth-child(1){transform:skew(var(--skew)) translateX(-6.8%);border-left:1px solid var(--border);border-top:1px solid var(--border);}
 footer.ready .center{width:100%;border-bottom:1px solid var(--border);transform: translateY(-3%)}
-footer .right > div:nth-child(2),header .left > div:nth-child(2),header .right > div:nth-child(2){position:relative;width:100%;height:100%;opacity:0;transition:ease-out 0.5s all;transition-delay:2s;}
-footer.ready .right > div:nth-child(2),header.ready .left > div:nth-child(2),header.ready .right > div:nth-child(2){opacity:1}
-footer.ready .right > div:nth-child(2) > a,header.ready .right > div:nth-child(2) > p{padding:1px 5px;position:relative;top:30%;margin:0 4px;color:white;}
+footer .right > div:nth-child(2),header .left > div:nth-child(2),header .right > div:nth-child(2),footer .center > div{position:relative;width:100%;height:100%;opacity:0;transition:ease-out 0.5s all;transition-delay:2s;}
+footer.ready .right > div:nth-child(2),header.ready .left > div:nth-child(2),header.ready .right > div:nth-child(2),footer.ready .center > div{opacity:1}
+footer.ready .right > div:nth-child(2) > a,header.ready .right > div:nth-child(2) > p{padding:1px 5px;position:relative;top:20%;margin:0 4px;color:white;}
 footer.ready .right > div:nth-child(2) > a:hover{color:#999;}
 header .left > div:nth-child(2){position:absolute;right:-10%;width:30% !important;margin:0;z-index:104;}
 header .left > div:nth-child(2) > div:nth-child(1),header .left > div:nth-child(2) > div:nth-child(2){height:90%;margin:auto;background:#515b6b;display:inline-block;transform:skew(var(--skew));}
@@ -304,3 +313,11 @@ header.ready .right > div:nth-child(2) > p,header.ready .right > div:nth-child(2
 .judge > div.profile-link{width:94%;text-align:left;padding:0 3%;margin:5px 0 35px;}
 .judge > div.profile-link > a{color:var(--profile-link-color-1);border:1px solid var(--profile-link-color-1);padding:6px 10px;border-radius:0 10px 0 10px;transition:ease-out 0.5s all;}
 .judge > div.profile-link > a:hover{background:var(--profile-link-color-1);color:var(--background);}
+footer .center > div{width:100%;text-align:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--text-color);font-family:"Poppins",sans-serif;font-size:90%;}
+footer .center > div > a{color:var(--text-color);margin:0 15px;}
+footer .center > div > a:nth-child(1):after{content:" Facebook";}
+footer .center > div > a:nth-child(2):after{content:" Instagram";}
+footer .center > div > a:nth-child(3):after{content:" Twitter";}
+footer .center > div > a:nth-child(4):after{content:" E-mail";}
+footer .right > div{font-family:"Poppins",sans-serif;font-size:70%;}
+footer .right > div > a:before{content:"By: "}
