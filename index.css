@@ -184,7 +184,7 @@ html{
   
   @media only screen and (max-width:768px){
     .flex{display:block;}
-    #starting-info{margin-bottom:20px;}
+    #starting-info{margin-bottom:20px !important;}
     #logo,#starting-info{width:80%;margin:auto;text-align:center;position:relative;}
     #logo{width:60vw !important;height:60vw !important;}
     #logo #logo-center{font-size:10vw !important;line-height:10vw !important;}
