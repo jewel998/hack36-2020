@@ -17,8 +17,8 @@ html{
     --brand-color-2:#74D1EA;
     --background: #292e36;
     --text-color:white;
-    --button-border-1: #4db2d1;
-    --button-border-2: #23849c;
+    --button-border-1: #fb7262;
+    --button-border-2: #ff264e;
     --button-border-3: #4db2d1;
     --spin-3: 25s;
     --spin-2: 10s;
@@ -210,9 +210,9 @@ html{
     .outer-spinner-1{width:48vw !important;height:48vw !important;}
     #judge-box,#prizes-box,#sponsors-box{margin:30px 0 !important;height:50vh !important;}
     .judge{margin:0 0 20px !important;}
-    .judge-image{height:25px !important;width:25px !important;}
-    .judge-name{font-size:13px !important;}
-    .judge-designation{font-size:11px !important;}
+    .judge-image{height:35px !important;width:35px !important;}
+    .judge-name{font-size:11px !important;}
+    .judge-designation{font-size:9px !important;}
     .judge-about{font-size:9px !important;}
     #sponsors-logo > div{max-width:70px !important;max-height:70px !important;margin:4% !important;}
     .prize-platform ~ h3{margin-top:35px;}
@@ -227,16 +227,16 @@ html{
 }
 #judge-box,#prizes-box,#sponsors-box{text-align:left;overflow-Y:auto;padding-top:25px !important;}
 .judge-info{position:relative;display:flex;}
-.judge-image{height:40px;width:40px;border-radius:50%;position:relative;float:left;margin:0 12px;overflow:hidden;}
+.judge-image{height:50px;width:50px;border-radius:50%;position:relative;float:left;margin:0 12px;overflow:hidden;}
 .judge-image > img{width:120%;height:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
 .judge-info > div:nth-child(2){margin:auto 0;text-align:left;}
 .judge-name{font-weight:700;color:var(--background);letter-spacing:2px;font-size:15px;}
 .judge-designation{font-size:12px}
 .judge-name,.judge-designation{font-family:"Poppins",sans-serif;text-transform: uppercase;}
-.judge:nth-child(odd) .judge-image{border:5px solid var(--brand-color-1);}
+.judge:nth-child(odd) .judge-image{border:3px solid var(--brand-color-1);}
 .judge:nth-child(odd) .judge-name{text-shadow:0.5px -0.5px 0 var(--brand-color-1), -0.5px -0.5px 0 var(--brand-color-1),-0.5px 0.5px 0 var(--brand-color-1),0.5px 0.5px 0 var(--brand-color-1);}
 .judge:nth-child(odd) .judge-designation{color:orange;}
-.judge:nth-child(even) .judge-image{border:5px solid var(--brand-color-2);}
+.judge:nth-child(even) .judge-image{border:3px solid var(--brand-color-2);}
 .judge:nth-child(even) .judge-name{text-shadow:0.5px -0.5px 0 var(--brand-color-2), -0.5px -0.5px 0 var(--brand-color-2),-0.5px 0.5px 0 var(--brand-color-2),0.5px 0.5px 0 var(--brand-color-2);}
 .judge:nth-child(even) .judge-designation{color:cyan;}
 .judge-about{text-align:left;font-family:"Poppins",sans-serif;font-size:12px;padding:12px;color:var(--text-color);}
