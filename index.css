@@ -9,22 +9,22 @@ Branch: Computer Science and Engineering
 Institution: MNNIT
 */
 html{
-    --outer-circle-color-1: #5aa1bc;
-    --outer-circle-color-2: orange;
-    --outer-circle-color-3: #a3f7bf;
-    --stroke-circle-color: #29a19c;
-    --brand-color-1:#FF585D;
+    --outer-circle-color-1: #f65c78;
+    --outer-circle-color-2: #fb7262;
+    --outer-circle-color-3: #f3af9e;
+    --stroke-circle-color: #ff264e;
+    --brand-color-1:#ff264e;
     --brand-color-2:#74D1EA;
-    --background: #393e46;
+    --background: #292e36;
     --text-color:white;
-    --button-border-1: #00d1cd;
-    --button-border-2: #9fd3c7;
-    --button-border-3: #00d1cd;
+    --button-border-1: #4db2d1;
+    --button-border-2: #23849c;
+    --button-border-3: #488cc4;
     --spin-3: 25s;
     --spin-2: 10s;
     --spin-1: 15s;
-    --scrollbar-color: #00d1cd;
-    --scrollbar-background: #9fd3c7;
+    --scrollbar-color: #488cc4;
+    --scrollbar-background: #40eee5;
     --shield-background:#252C37;
     --border:cyan;
     --skew:-45deg;
@@ -155,10 +155,12 @@ html{
   }
   #logo > #logo-center{
     position:absolute;
+    height:35%;
+    width:35%;
     color:var(--background);
     top:50%;
     left:50%;
-    transform: translate(-40%,-50%) translateZ(200px);
+    transform: translate(-50%,-50%) translateZ(200px);
     text-align:center;
     font-size:4vw;
     margin:0;
@@ -166,6 +168,7 @@ html{
     line-height:4vw;
     text-shadow: 2px -2px 2px var(--brand-color-1), -2px -2px 2px var(--brand-color-1), -2px 2px 2px var(--brand-color-1), 2px 2px 2px var(--brand-color-1);
   }
+  #logo-center > img{position:absolute;width:100%;top:50%;left:50%;transform:translate(-50%,-50%);}
   #logo > #logo-center > span{
     text-shadow: 2px -2px 2px var(--brand-color-2), -2px -2px 2px var(--brand-color-2), -2px 2px 2px var(--brand-color-2), 2px 2px 2px var(--brand-color-2);
   }
@@ -281,3 +284,18 @@ header .left > div:nth-child(2) > div:nth-child(1),header .left > div:nth-child(
 header .left > div:nth-child(2) > div:nth-child(1){width:30% !important;}
 header .left > div:nth-child(2) > div:nth-child(2){width:50% !important;}
 header.ready .right > div:nth-child(2) > p,header.ready .right > div:nth-child(2) > p > a{display:inline;font-family:"Poppins",sans-serif;font-size:0.8vw;color:#515b6b !important;}
+
+.brand{animation: glitch linear infinite 5s;transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s all;}
+.brand > span:nth-child(1){animation: glitch linear infinite 5s;animation-delay:0.5s;transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s all;}
+.brand > span:nth-child(2){animation: glitch linear infinite 4s;animation-delay:0.5s;transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s all;}
+@keyframes glitch{
+  0%{opacity:1;}
+  20%{opacity:0.4;}
+  30%{opacity:1;}
+  50%{opacity:0.3;}
+  60%{opacity:1;}
+  80%{opacity:0.5;}
+  90%{opacity:1;}
+  95%{opacity:0;}
+  100%{opacity:1;}
+}
