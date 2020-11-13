@@ -240,6 +240,25 @@ function updateDial(){
     var dashOffset = ((MAX_DAYS-days)/MAX_DAYS)*c;
     timer.style.strokeDashoffset = dashOffset;
 }
+function showCampusModal(){
+  if(!$('#brand-ambassador').hasClass("showCA")){
+    $('#brand-ambassador').addClass("showCA");
+  }
+}
+function showCodeOfConductModal(){
+  if(!$('#code-of-conduct').hasClass("showCOC")){
+    $('#code-of-conduct').addClass("showCOC");
+  }
+}
+window.onclick = function(event){
+  //console.log(document.getElementById('brand-ambassador'),event);
+  if(event.target != document.getElementById('brand-ambassador') && event.target.offsetParent != document.getElementById('brand-ambassador') && event.target != document.getElementById('showCA')){
+    $('#brand-ambassador').removeClass("showCA");
+  }
+  if(event.target != document.getElementById('code-of-conduct') && event.target.offsetParent != document.getElementById('code-of-conduct') && event.target != document.getElementById('showCOC')){
+    $('#code-of-conduct').removeClass("showCOC");
+  }
+}
 $(document).ready(function(){
     $("header").addClass("ready");
     $("footer").addClass("ready");
